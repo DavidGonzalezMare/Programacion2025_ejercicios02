@@ -4,7 +4,7 @@
 
 # Instrucciones generales
 
--**Entorno:**Visual Studio 2022 (Community). Proyectos Windows Forms y Consola en C#.
+- **Entorno:** Visual Studio 2022 (Community). Proyectos Windows Forms y Consola en C#.
 - **Alcance del Tema 2:** tipos básicos, constantes y variables, operadores (aritméticos, relacionales, lógicos, concatenación, precedencia), expresiones/asignación, cadenas interpoladas (incl. formato), manejo de errores con try-catch, e introducción a consola.
 - **Estilo de código (Microsoft):**
   - Variables y parámetros: camelCase (p. ej., precioNeto).
@@ -93,8 +93,8 @@ catch (FormatException)
 - Precio = 12,30 y Descuento = 0,15 → **Precio: 12,30 € · Dto: 15,0 % · Neto: 10,46 €**
   
 - Precio = 19,99 y Descuento = **0,20 → Neto: 15,99 €**
-- 
-Nota: usa coma o punto según la configuración de tu Visual Studio. Si más adelante escribes literales en código (no leídos), recuerda el sufijo m: `decimal iva = 0.21m;`.
+  
+**Nota:** usa coma o punto según la configuración de tu Visual Studio. Si más adelante escribes literales en código (no leídos), recuerda el sufijo m: `decimal iva = 0.21m;`.
 
 ![Ejercicio 4](./images/imagen07.png)
 
@@ -210,7 +210,7 @@ Añade un **try–catch (FormatException)** para controlar entradas no numérica
 
 ![Ejercicio 8](./images/imagen11.png)
 
-##Ejercicio 9: Lógicos y cortocircuito sin if
+## Ejercicio 9: Lógicos y cortocircuito sin if
 
 **Realizar un programa que lea dos valores de tipo entero (A y B) y muestre el resultado (True/False) de tres expresiones lógicas sin usar if: Tema2_Ej08**
 
