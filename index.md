@@ -133,7 +133,7 @@ static void Main(string[] args)
 - Precio = 12,30 y Descuento = **0,15 → Precio: 12,30 € · Dto: 15,0 % · Neto: 10,46 €**
   
 - Precio = 19,99 y Descuento = **0,20 → Neto: 15,99 €**
-- 
+  
 **Nota:** usa coma o punto según la configuración de tu Visual Studio. Si más adelante escribes literales en código (no leídos), recuerda el sufijo m: `decimal iva = 0.21m;`.
 
 <br>
@@ -347,7 +347,7 @@ N0 (sin decimales), N2 (dos decimales), C2 (moneda), P2 (porcentaje).
 
 ![Ejercicio 20](./images/imagen19.png)
 
-**Plantillas y guías rápidas (Forms)**
+## Plantillas y guías rápidas (Forms)
 
 - **Nombres de controles:** `txt*` (entrada), `lbl*` (salida), `btn*` (acción), `cmb*` (listas), `nud*` (numéricos), etc.
   
