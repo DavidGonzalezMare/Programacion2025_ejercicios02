@@ -212,11 +212,11 @@ Añade un **try–catch (FormatException)** para controlar entradas no numérica
 
 ## Ejercicio 9: Lógicos y cortocircuito sin if
 
-**Realizar un programa que lea dos valores de tipo entero (A y B) y muestre el resultado (True/False) de tres expresiones lógicas sin usar if: Tema2_Ej08**
+**Realizar un programa que lea dos valores de tipo entero (A y B) y muestre el resultado (True/False) de tres expresiones lógicas sin usar if.**
 
 - **Ambos positivos:** (A > 0) && (B > 0)
   
-- **Alguno es cero:** (A == 0) || (B == 0)
+- **Alguno es cero:** (A == 0) \|\| (B == 0)
   
 - **A menor que B y B < 100:** (A < B) && (B < 100)
 
@@ -230,10 +230,10 @@ Añade un **try–catch (FormatException)** para controlar entradas no numérica
 - 2 + 3 * 5
 - (2 + 3) * 5
 - (5 + 2) == 7 && (3 > 1)
-- (5 + 2) == 7 || (3 < 1)
-- (!true) || (false && true)
+- (5 + 2) == 7 \|\| (3 < 1)
+- (!true) \|\| (false && true)
 - 10 / 3
-- (1 + 2 * 3) == 7 || (4 % 2) == 0
+- (1 + 2 * 3) == 7 \|\| (4 % 2) == 0
 
 <br>
 
@@ -320,7 +320,7 @@ Crea proyectos de **Aplicación de Consola**. Añade `Console.ReadKey()` al fina
 
 ## Ejercicio 18: (precio + descuento)
 
-**Realizar un programa de consola que pida un precio y un descuento (entre 0 y 1), calcule el neto y lo muestre por pantalla. Tema2_Ej20** (Aplicación de Consola).
+**Realizar un programa de consola que pida un precio y un descuento (entre 0 y 1), calcule el neto y lo muestre por pantalla. Tema2_Ej18** (Aplicación de Consola).
 
 **Nota:** trabaja con el tipo decimal y usa la fórmula neto = precio * (1 − descuento).
 
@@ -332,7 +332,7 @@ Crea proyectos de **Aplicación de Consola**. Añade `Console.ReadKey()` al fina
 
 ## Ejercicio 19: Formateo numérico avanzado
 
-**Realizar un programa de consola que pida un número decimal y lo muestre en cuatro formatos: N0, N2, C2 y P2. Tema2_Ej23** (Aplicación de Consola).
+**Realizar un programa de consola que pida un número decimal y lo muestre en cuatro formatos: N0, N2, C2 y P2. Tema2_Ej19** (Aplicación de Consola).
 
 **Nota:** trabaja con decimal. Muestra el mismo valor en líneas separadas con los formatos:  
 N0 (sin decimales), N2 (dos decimales), C2 (moneda), P2 (porcentaje). 
@@ -341,11 +341,32 @@ N0 (sin decimales), N2 (dos decimales), C2 (moneda), P2 (porcentaje).
 
 ## Ejercicio 20: char – vocal y dígito (resolver)
 
-**Realizar un programa de consola que pida un único carácter y muestre si es una vocal y si es un dígito. Tema2_Ej24** (Aplicación de Consola).
+**Realizar un programa de consola que pida un único carácter y muestre si es una vocal y si es un dígito. Tema2_Ej20** (Aplicación de Consola).
 
 **Nota:** considera vocales a, e, i, o, u en  minúscula; dígito entre '0' y '9'. Calcula ambas respuestas con expresiones booleanas (sin usar if). 
 
 ![Ejercicio 20](./images/imagen19.png)
+
+<br>
+
+## Ejercicio 21: Integrador. Formularios y Consola
+
+Crea una pequeña app ***Tema2_integrador***, que calcule la **duración total** de tres canciones y el **precio final** de un “mini-álbum”. A partir de los **minutos** y **segundos** de cada pista obtendrás el tiempo total en formato `mm:ss`; y, a partir de un **precio base** y un **descuento**, calcularás el **neto**, el **IVA** y el **total** que podrás mostrar en euros, dólares o libras esterlinas.
+
+Además, trabajarás el dinero con `decimal` para no perder céntimos y harás uso de **constantes** para almacenar los valores de conversión.
+
+**Especificaciones mínimas (resumen):**
+
+- IVA 21% y 1 EUR = 1.1672 USD; 1 EUR = 0.8740 GBP.
+  
+- Formatos: duración `mm:ss` (con `ToString("D2")`), importes `C2` y `P1`.
+  
+- Encapsula el cálculo en `try–catch` (`FormatException`) y, si quieres, usa `finally` para devolver el foco al primer cuadro de texto. 
+  
+![Ejercicio 20](./images/imagen20.png)
+
+Realizar tanto la versión **Windows Forms**, como la versión **Consola**.
+
 
 ## Plantillas y guías rápidas (Forms)
 
